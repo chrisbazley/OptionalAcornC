@@ -2,6 +2,10 @@
 #ifndef swis_h
 #define swis_h
 
+#ifndef __kernel_h
+#include "kernel.h"
+#endif
+
 #if !defined(USE_OPTIONAL) && !defined(_Optional)
 #define _Optional
 #endif
