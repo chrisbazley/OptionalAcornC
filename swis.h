@@ -37,6 +37,9 @@
 #define Wimp_Extend 0
 #define OS_RemoveTickerEvent 0
 #define OS_CallAfter 0 
+#define OS_Claim
+#define OS_Release
+#define OS_CallEvery
 
 #define _IN(c) 0
 #define _OUT(c) 0
