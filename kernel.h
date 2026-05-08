@@ -42,4 +42,7 @@ int _kernel_osgbpb(int, unsigned int, _kernel_osgbpb_block *);
 _Optional _kernel_oserror *_kernel_setenv(const char *, const char*);
 _Optional _kernel_oserror *_kernel_getenv(const char *,  char*, int);
 
+_Optional _kernel_oserror *_kernel_irqs_off(void);
+_Optional _kernel_oserror *_kernel_irqs_on(void);
+
 #endif
