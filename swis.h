@@ -40,6 +40,9 @@
 #define OS_Claim 0
 #define OS_Release 0
 #define OS_CallEvery 0
+#define OS_ReadArgs 0
+#define OS_AddCallBack 0
+#define OS_RemoveCallBack 0
 
 #define _IN(c) 0
 #define _OUT(c) 0
