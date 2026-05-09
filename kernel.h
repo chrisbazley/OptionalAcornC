@@ -2,6 +2,8 @@
 #ifndef kernel_h
 #define kernel_h
 
+#include <stdint.h>
+
 #if !defined(USE_OPTIONAL) && !defined(_Optional)
 #define _Optional
 #endif
@@ -12,7 +14,7 @@ typedef struct {
 } _kernel_oserror;
 
 typedef struct {
-   int r[16];
+   intptr_t r[16];
 }_kernel_swi_regs;
 
 typedef struct {
