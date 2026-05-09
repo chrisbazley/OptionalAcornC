@@ -40,7 +40,7 @@ _Optional _kernel_oserror *_kernel_swi_c(int, _kernel_swi_regs *, _kernel_swi_re
 int _kernel_osbyte(int, int, int);
 int _kernel_oscli(char *);
 
-int _kernel_osgbpb(int, unsigned int, _kernel_osgbpb_block *);
+int _kernel_osgbpb(int, uintptr_t, _kernel_osgbpb_block *);
 _Optional _kernel_oserror *_kernel_setenv(const char *, const char*);
 _Optional _kernel_oserror *_kernel_getenv(const char *,  char*, int);
 
