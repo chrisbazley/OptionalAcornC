@@ -18,15 +18,13 @@ typedef struct {
 }_kernel_swi_regs;
 
 typedef struct {
-   void * dataptr;
-   int nbytes;
-   int fileptr;
+   void *dataptr;
+   intptr_t nbytes, fileptr, buf_len;
    char *wild_fld;
-   int buf_len;
 }_kernel_osgbpb_block;
 
 typedef struct {
-   int load, start, end, exec;
+   intptr_t load, start, end, exec;
 }_kernel_osfile_block;
 
 #define _kernel_ERROR (-1)
@@ -42,7 +40,7 @@ int _kernel_oscli(char *);
 
 int _kernel_osgbpb(int, uintptr_t, _kernel_osgbpb_block *);
 _Optional _kernel_oserror *_kernel_setenv(const char *, const char*);
-_Optional _kernel_oserror *_kernel_getenv(const char *,  char*, int);
+_Optional _kernel_oserror *_kernel_getenv(const char *,  char*, uintptr_t);
 
 _Optional _kernel_oserror *_kernel_irqs_off(void);
 _Optional _kernel_oserror *_kernel_irqs_on(void);
