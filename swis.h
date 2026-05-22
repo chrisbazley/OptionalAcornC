@@ -43,6 +43,13 @@
 #define OS_ReadArgs 0
 #define OS_AddCallBack 0
 #define OS_RemoveCallBack 0
+#define Font_CacheAddr 0
+#define Font_FindFont 0
+#define Font_ScanString 0
+#define Font_ReadInfo 0
+#define Font_Paint 0
+#define ColourTrans_SetFontColours 0
+#define Font_LoseFont 0
 
 #define _IN(c) 0
 #define _OUT(c) 0

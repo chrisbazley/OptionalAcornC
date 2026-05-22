@@ -45,4 +45,6 @@ _Optional _kernel_oserror *_kernel_getenv(const char *,  char*, uintptr_t);
 _Optional _kernel_oserror *_kernel_irqs_off(void);
 _Optional _kernel_oserror *_kernel_irqs_on(void);
 
+int _kernel_oswrch(int ch);
+
 #endif
