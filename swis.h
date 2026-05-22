@@ -50,6 +50,7 @@
 #define Font_Paint 0
 #define ColourTrans_SetFontColours 0
 #define Font_LoseFont 0
+#define OS_Byte 0
 
 #define _IN(c) 0
 #define _OUT(c) 0
