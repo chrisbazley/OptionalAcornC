@@ -183,14 +183,14 @@
   * Description : Sets the title for the specified DCS object
   * In          : unsigned int flags
   *               ObjectId dcs
-  *               char *title
+  *               const char *title
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *dcs_set_title ( unsigned int flags,
                                          ObjectId dcs,
-                                         char *title
+                                         const char *title
                                        );
  
  
@@ -218,14 +218,14 @@
   * Description : Sets the message used in the DCS object
   * In          : unsigned int flags
   *               ObjectId dcs
-  *               char *message
+  *               const char *message
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *dcs_set_message ( unsigned int flags,
                                            ObjectId dcs,
-                                           char *message
+                                           const char *message
                                          );
  
  
