@@ -376,14 +376,14 @@
   * Description : Adds a gadget to the list of gadgets for the specified window object
   * In          : unsigned int flags
   *               ObjectId window
-  *               Gadget *gadget
+  *               const Gadget *gadget
   * Out         : ComponentId *gadget_component
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *window_add_gadget ( unsigned int flags,
                                              ObjectId window,
-                                             Gadget *gadget,
+                                             const Gadget *gadget,
                                              ComponentId *gadget_component
                                            );
  
@@ -423,7 +423,7 @@
   * Description : Sets the pointer shape that will be used when pointer enters window object
   * In          : unsigned int flags
   *               ObjectId window
-  *               char *sprite_name
+  *               const char *sprite_name
   *               int x_hot_spot
   *               int y_hot_spot
   * Out         : None
@@ -432,7 +432,7 @@
  
  extern _Optional _kernel_oserror *window_set_pointer ( unsigned int flags,
                                               ObjectId window,
-                                              char *sprite_name,
+                                              const char *sprite_name,
                                               int x_hot_spot,
                                               int y_hot_spot
                                             );
@@ -466,14 +466,14 @@
   * Description : Sets the help message that is associated with the specified window object
   * In          : unsigned int flags
   *               ObjectId window
-  *               char *message_text
+  *               const char *message_text
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *window_set_help_message ( unsigned int flags,
                                                    ObjectId window,
-                                                   char *message_text
+                                                   const char *message_text
                                                  );
  
  
@@ -502,7 +502,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               int no_shortcuts
-  *               KeyboardShortcut *shortcuts
+  *               const KeyboardShortcut *shortcuts
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -510,7 +510,7 @@
  extern _Optional _kernel_oserror *window_add_keyboard_shortcuts ( unsigned int flags,
                                                          ObjectId window,
                                                          int no_shortcuts,
-                                                         KeyboardShortcut *shortcuts
+                                                         const KeyboardShortcut *shortcuts
                                                        );
  
  
@@ -520,7 +520,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               int no_remove
-  *               KeyboardShortcut *shortcuts
+  *               const KeyboardShortcut *shortcuts
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -528,7 +528,7 @@
  extern _Optional _kernel_oserror *window_remove_keyboard_shortcuts ( unsigned int flags,
                                                             ObjectId window,
                                                             int no_remove,
-                                                            KeyboardShortcut *shortcuts
+                                                            const KeyboardShortcut *shortcuts
                                                           );
  
  
@@ -537,14 +537,14 @@
   * Description : Sets the title for the specified window object
   * In          : unsigned int flags
   *               ObjectId window
-  *               char *title
+  *               const char *title
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *window_set_title ( unsigned int flags,
                                             ObjectId window,
-                                            char *title
+                                            const char *title
                                           );
  
  
@@ -603,14 +603,14 @@
   * Description : Sets the extent of the specified window
   * In          : unsigned int flags
   *               ObjectId window
-  *               BBox *extent
+  *               const BBox *extent
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *window_set_extent ( unsigned int flags,
                                              ObjectId window,
-                                             BBox *extent
+                                             const BBox *extent
                                            );
  
  
@@ -635,14 +635,14 @@
   * Description : Forces a redraw of the supplied area for the specified window
   * In          : unsigned int flags
   *               ObjectId window
-  *               BBox *redraw_box
+  *               const BBox *redraw_box
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *window_force_redraw ( unsigned int flags,
                                                ObjectId window,
-                                               BBox *redraw_box
+                                               const BBox *redraw_box
                                              );
  
  
