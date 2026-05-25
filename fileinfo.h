@@ -231,14 +231,14 @@
   * Description : Sets the filename for the specified file info object
   * In          : unsigned int flags
   *               ObjectId fileinfo
-  *               char *file_name
+  *               const char *file_name
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *fileinfo_set_file_name ( unsigned int flags,
                                                   ObjectId fileinfo,
-                                                  _Optional char *file_name
+                                                  _Optional const char *file_name
                                                 );
  
  
@@ -297,14 +297,14 @@
   * Description : Set the date for the specified file info object (using a 5 byte UTC)
   * In          : unsigned int flags
   *               ObjectId fileinfo
-  *               int *UTC
+  *               const int *UTC
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *fileinfo_set_date ( unsigned int flags,
                                              ObjectId fileinfo,
-                                             int *UTC
+                                             const int *UTC
                                            );
  
  
@@ -329,14 +329,14 @@
   * Description : Sets the title for the specified file info object
   * In          : unsigned int flags
   *               ObjectId fileinfo
-  *               char *title
+  *               const char *title
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *fileinfo_set_title ( unsigned int flags,
                                               ObjectId fileinfo,
-                                              char *title
+                                              const char *title
                                             );
  
  
