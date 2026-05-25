@@ -216,7 +216,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId gadget
-  *               char *message_text
+  *               const char *message_text
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -224,7 +224,7 @@
  extern _Optional _kernel_oserror *gadget_set_help_message ( unsigned int flags,
                                                    ObjectId window,
                                                    ComponentId gadget,
-                                                   char *message_text
+                                                   const char *message_text
                                                  );
  
  
@@ -344,7 +344,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId action_button
-  *               char *text
+  *               const char *text
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -352,7 +352,7 @@
  extern _Optional _kernel_oserror *actionbutton_set_text ( unsigned int flags,
                                                  ObjectId window,
                                                  ComponentId action_button,
-                                                 char *text
+                                                 const char *text
                                                );
  
  
@@ -563,7 +563,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId option_button
-  *               char *label
+  *               const char *label
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -571,7 +571,7 @@
  extern _Optional _kernel_oserror *optionbutton_set_label ( unsigned int flags,
                                                   ObjectId window,
                                                   ComponentId option_button,
-                                                  char *label
+                                                  const char *label
                                                 );
  
  
@@ -876,7 +876,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId radio_button
-  *               char *label
+  *               const char *label
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -884,7 +884,7 @@
  extern _Optional _kernel_oserror *radiobutton_set_label ( unsigned int flags,
                                                  ObjectId window,
                                                  ComponentId radio_button,
-                                                 char *label
+                                                 const char *label
                                                );
  
  
@@ -948,7 +948,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId display_field
-  *               char *font_name
+  *               const char *font_name
   *               int width
   *               int height
   * Out         : None
@@ -958,7 +958,7 @@
  extern _Optional _kernel_oserror *displayfield_set_font ( unsigned int flags,
                                                  ObjectId window,
                                                  ComponentId display_field,
-                                                 char *font_name,
+                                                 const char *font_name,
                                                  int width,
                                                  int height
                                                );
@@ -970,7 +970,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId display_field
-  *               char *text
+  *               const char *text
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -978,7 +978,7 @@
  extern _Optional _kernel_oserror *displayfield_set_value ( unsigned int flags,
                                                   ObjectId window,
                                                   ComponentId display_field,
-                                                  char *text
+                                                  const char *text
                                                 );
  
  
@@ -1082,7 +1082,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId writable_field
-  *               char *font_name
+  *               const char *font_name
   *               int width
   *               int height
   * Out         : None
@@ -1092,7 +1092,7 @@
  extern _Optional _kernel_oserror *writablefield_set_font ( unsigned int flags,
                                                   ObjectId window,
                                                   ComponentId writable_field,
-                                                  char *font_name,
+                                                  const char *font_name,
                                                   int width,
                                                   int height
                                                 );
@@ -1104,7 +1104,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId writable
-  *               char *allowed
+  *               const char *allowed
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -1112,7 +1112,7 @@
  extern _Optional _kernel_oserror *writablefield_set_allowable ( unsigned int flags,
                                                        ObjectId window,
                                                        ComponentId writable,
-                                                       char *allowed
+                                                       const char *allowed
                                                      );
  
  
@@ -1122,7 +1122,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId writable
-  *               char *text
+  *               const char *text
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -1130,7 +1130,7 @@
  extern _Optional _kernel_oserror *writablefield_set_value ( unsigned int flags,
                                                    ObjectId window,
                                                    ComponentId writable,
-                                                   char *text
+                                                   const char *text
                                                  );
  
  
@@ -1498,7 +1498,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId draggable
-  *               char *sprite_name
+  *               const char *sprite_name
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -1506,7 +1506,7 @@
  extern _Optional _kernel_oserror *draggable_set_sprite ( unsigned int flags,
                                                 ObjectId window,
                                                 ComponentId draggable,
-                                                char *sprite_name
+                                                const char *sprite_name
                                               );
  
  
@@ -1516,7 +1516,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId draggable
-  *               char *text
+  *               const char *text
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -1524,7 +1524,7 @@
  extern _Optional _kernel_oserror *draggable_set_text ( unsigned int flags,
                                               ObjectId window,
                                               ComponentId draggable,
-                                              char *text
+                                              const char *text
                                             );
  
  
@@ -1996,7 +1996,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId string_set
-  *               char *string_to_select
+  *               const char *string_to_select
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -2004,7 +2004,7 @@
  extern _Optional _kernel_oserror *stringset_set_selected ( unsigned int flags,
                                                   ObjectId window,
                                                   ComponentId string_set,
-                                                  char *string_to_select
+                                                  const char *string_to_select
                                                 );
  
  
@@ -2035,7 +2035,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId string_set
-  *               char *strings
+  *               const char *strings
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -2043,7 +2043,7 @@
  extern _Optional _kernel_oserror *stringset_set_available ( unsigned int flags,
                                                    ObjectId window,
                                                    ComponentId string_set,
-                                                   char *strings
+                                                   const char *strings
                                                  );
  
  
@@ -2053,7 +2053,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId string_set
-  *               char *allowable
+  *               const char *allowable
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -2061,7 +2061,7 @@
  extern _Optional _kernel_oserror *stringset_set_allowable ( unsigned int flags,
                                                    ObjectId window,
                                                    ComponentId string_set,
-                                                   char *allowable
+                                                   const char *allowable
                                                  );
  
  /*
@@ -2190,7 +2190,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId button
-  *               char *value
+  *               const char *value
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -2198,7 +2198,7 @@
  extern _Optional _kernel_oserror *button_set_value ( unsigned int flags,
                                             ObjectId window,
                                             ComponentId button,
-                                            char *value
+                                            const char *value
                                           );
  
  
@@ -2250,7 +2250,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId button
-  *               char *value
+  *               const char *value
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -2258,7 +2258,7 @@
  extern _Optional _kernel_oserror *button_set_validation ( unsigned int flags,
                                                  ObjectId window,
                                                  ComponentId button,
-                                                 char *value
+                                                 const char *value
                                                );
  
  
@@ -2268,7 +2268,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId button
-  *               char *font_name
+  *               const char *font_name
   *               int width
   *               int height
   * Out         : None
@@ -2278,7 +2278,7 @@
  extern _Optional _kernel_oserror *button_set_font ( unsigned int flags,
                                            ObjectId window,
                                            ComponentId button,
-                                           char *font_name,
+                                           const char *font_name,
                                            int width,
                                            int height
                                          );
