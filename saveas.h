@@ -193,7 +193,7 @@
  
  extern _Optional _kernel_oserror *saveas_file_save_completed ( unsigned int flags,
                                                       ObjectId saveas,
-                                                      char *filename
+                                                      const char *filename
                                                     );
  
  
@@ -210,7 +210,7 @@
  
  extern _Optional _kernel_oserror *saveas_buffer_filled ( unsigned int flags,
                                                 ObjectId saveas,
-                                                void *buffer,
+                                                const void *buffer,
                                                 int bytes_written
                                               );
  
@@ -230,9 +230,9 @@
  
  extern _Optional _kernel_oserror *saveas_set_data_address ( unsigned int flags,
                                                    ObjectId saveas,
-                                                   void *data,
+                                                   const void *data,
                                                    int data_size,
-                                                   void *selection,
+                                                   const void *selection,
                                                    int selection_size
                                                  );
  
@@ -339,14 +339,14 @@
   * Description : Sets the filename for the specified saveas object
   * In          : unsigned int flags
   *               ObjectId saveas
-  *               char *file_name
+  *               const char *file_name
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *saveas_set_file_name ( unsigned int flags,
                                                 ObjectId saveas,
-                                                char *file_name
+                                                const char *file_name
                                               );
  
  
@@ -374,14 +374,14 @@
   * Description : Sets the title for the specified saveas object
   * In          : unsigned int flags
   *               ObjectId saveas
-  *               char *title
+  *               const char *title
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *saveas_set_title ( unsigned int flags,
                                             ObjectId saveas,
-                                            char *title
+                                            const char *title
                                           );
  
  
