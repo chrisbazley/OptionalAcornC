@@ -170,14 +170,14 @@
   * Description : Sets the message used in the quit object
   * In          : unsigned int flags
   *               ObjectId quit
-  *               char *message
+  *               const char *message
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *quit_set_message ( unsigned int flags,
                                             ObjectId quit,
-                                            char *message
+                                            const char *message
                                           );
  
  
@@ -205,14 +205,14 @@
   * Description : Sets the title for the specified quit object
   * In          : unsigned int flags
   *               ObjectId quit
-  *               char *title
+  *               const char *title
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *quit_set_title ( unsigned int flags,
                                           ObjectId quit,
-                                          char *title
+                                          const char *title
                                         );
  
  
