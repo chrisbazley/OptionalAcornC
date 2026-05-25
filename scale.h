@@ -178,14 +178,14 @@
   * Description : Sets the title for the specifed scale object
   * In          : unsigned int flags
   *               ObjectId scale
-  *               char *title
+  *               const char *title
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *scale_set_title ( unsigned int flags,
                                            ObjectId scale,
-                                           char *title
+                                           const char *title
                                          );
  
  
