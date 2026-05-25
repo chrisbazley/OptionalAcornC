@@ -234,14 +234,14 @@
   * Description : Sets the title of the specified menu object
   * In          : unsigned int flags
   *               ObjectId menu
-  *               char *title
+  *               const char *title
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *menu_set_title ( unsigned int flags,
                                           ObjectId menu,
-                                          char *title
+                                          const char *title
                                         );
  
  
@@ -305,7 +305,7 @@
  extern _Optional _kernel_oserror *menu_add_entry ( unsigned int flags,
                                           ObjectId menu,
                                           ComponentId at_entry,
-                                          char *entry_description,
+                                          const char *entry_description,
                                           ComponentId *new_entry
                                         );
  
@@ -334,14 +334,14 @@
   * Description : Sets the help message for a menu object
   * In          : unsigned int flags
   *               ObjectId menu
-  *               char *help_message
+  *               const char *help_message
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *menu_set_help_message ( unsigned int flags,
                                                  ObjectId menu,
-                                                 char *help_message
+                                                 const char *help_message
                                                );
  
  
@@ -372,7 +372,7 @@
   * In          : unsigned int flags
   *               ObjectId menu
   *               ComponentId entry
-  *               char *help_message
+  *               const char *help_message
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -380,7 +380,7 @@
  extern _Optional _kernel_oserror *menu_set_entry_help_message ( unsigned int flags,
                                                        ObjectId menu,
                                                        ComponentId entry,
-                                                       char *help_message
+                                                       const char *help_message
                                                      );
  
  
@@ -555,7 +555,7 @@
   * In          : unsigned int flags
   *               ObjectId menu
   *               ComponentId entry
-  *               char *sprite_name
+  *               const char *sprite_name
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -563,7 +563,7 @@
  extern _Optional _kernel_oserror *menu_set_entry_sprite ( unsigned int flags,
                                                  ObjectId menu,
                                                  ComponentId entry,
-                                                 char *sprite_name
+                                                 const char *sprite_name
                                                );
  
  
@@ -594,7 +594,7 @@
   * In          : unsigned int flags
   *               ObjectId menu
   *               ComponentId entry
-  *               char *text
+  *               const char *text
   * Out         : None
   * Returns     : pointer to error block
   */
@@ -602,7 +602,7 @@
  extern _Optional _kernel_oserror *menu_set_entry_text ( unsigned int flags,
                                                ObjectId menu,
                                                ComponentId entry,
-                                               char *text
+                                               const char *text
                                              );
  
  
