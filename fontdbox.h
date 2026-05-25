@@ -178,14 +178,14 @@
   * Description : Sets the title for the specified font dbox
   * In          : unsigned int flags
   *               ObjectId fontdbox
-  *               char *title
+  *               const char *title
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *fontdbox_set_title ( unsigned int flags,
                                               ObjectId fontdbox,
-                                              char *title
+                                              const char *title
                                             );
  
  
@@ -213,14 +213,14 @@
   * Description : Sets the string used in the "try" writable for the specified font dbox
   * In          : unsigned int flags
   *               ObjectId fontdbox
-  *               char *try_string
+  *               const char *try_string
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *fontdbox_set_try_string ( unsigned int flags,
                                                    ObjectId fontdbox,
-                                                   char *try_string
+                                                   const char *try_string
                                                  );
  
  
@@ -283,14 +283,14 @@
   * Description : Sets the font for the specified font dbox
   * In          : unsigned int flags
   *               ObjectId fontdbox
-  *               char *font_id
+  *               const char *font_id
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *fontdbox_set_font ( unsigned int flags,
                                              ObjectId fontdbox,
-                                             char *font_id
+                                             const char *font_id
                                            );
  
  
