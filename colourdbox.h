@@ -219,14 +219,14 @@
   * Description : Set the colour model for the specified ColourDbox
   * In          : unsigned int flags
   *               ObjectId colourdbox
-  *               int *colour_model_block
+  *               const int *colour_model_block
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *colourdbox_set_colour_model ( unsigned int flags,
                                                        ObjectId colourdbox,
-                                                       int *colour_model_block
+                                                       const int *colour_model_block
                                                      );
  
  /*
@@ -255,14 +255,14 @@
   * Description : Set the colour to be displayed in the specified ColourDbox
   * In          : unsigned int flags
   *               ObjectId colourdbox
-  *               int *colour_block
+  *               const int *colour_block
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *colourdbox_set_colour ( unsigned int flags,
                                                  ObjectId colourdbox,
-                                                 int *colour_block
+                                                 const int *colour_block
                                                );
  
  
