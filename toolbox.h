@@ -404,14 +404,14 @@
   *   Name        : toolbox_create_object
   *   Description : creates a named object
   *   In          : unsigned int flags
-  *                 void        *name_or_template - pointer to template name or
+  *                 const void  *name_or_template - pointer to template name or
   *                                                 description block
   *   Out         : ObjectId    *id               - destination for object id upon creation
   *   Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *toolbox_create_object ( unsigned int flags,
-                                                 void *name_or_template,
+                                                 const void *name_or_template,
                                                  ObjectId *id
                                                );
  
@@ -442,7 +442,7 @@
   *   In          : unsigned int     flags
   *                 ObjectId         id
   *                 int              show_type        - show type reason code
-  *                 void            *type             - contents dependent on reason code
+  *                 const void      *type             - contents dependent on reason code
   *                                                     (can be null)
   *                 ObjectId         parent           - parent object
   *                 ComponentId      parent_component - parent component
@@ -453,7 +453,7 @@
  extern _Optional _kernel_oserror *toolbox_show_object ( unsigned int flags,
                                                ObjectId id,
                                                int show_type,
-                                               _Optional void *type,
+                                               _Optional const void *type,
                                                ObjectId parent,
                                                ComponentId parent_component
                                              );
@@ -595,11 +595,11 @@
   *   Description : called by client when initialising the application
   *   In          : unsigned int flags
   *                 int          wimp_version            - wimp version * 100 (must be >= 310)
-  *                 int         *wimp_messages           - list of wimp messages that client wishes
+  *                 const int   *wimp_messages           - list of wimp messages that client wishes
   *                                                        to receive
-  *                 int         *toolbox_events          - list of toolbox events that the task
+  *                 const int   *toolbox_events          - list of toolbox events that the task
   *                                                        wishes to receive
-  *                 char           *directory            - name of dir holding resources
+  *                 const char     *directory            - name of dir holding resources
   *                 MessagesFD     *mfd                  - destination for messages file descriptor
   *                 IdBlock        *idb                  - pointer to id block
   *  Out          : int            *current_wimp_version - destination pointer for current wimp
@@ -614,9 +614,9 @@
  
  extern _Optional _kernel_oserror *toolbox_initialise ( unsigned int flags,
                                               int wimp_version,
-                                              int *wimp_messages,
-                                              int *toolbox_events,
-                                              char *directory,
+                                              const int *wimp_messages,
+                                              const int *toolbox_events,
+                                              const char *directory,
                                               MessagesFD *mfd,
                                               IdBlock *idb,
                                               _Optional int *current_wimp_version,
@@ -631,13 +631,13 @@
   *   Name        : toolbox_load_resources
   *   Description : loads the resources file
   *   In          : unsigned int  flags
-  *                 char         *resources   - name of resources file
+  *                 const char   *resources   - name of resources file
   *   Out         : None
   *   Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *toolbox_load_resources ( unsigned int flags,
-                                                  char *resources
+                                                  const char *resources
                                                 );
  
  
