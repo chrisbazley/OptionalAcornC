@@ -292,14 +292,14 @@
   * Description : Sets the iconbar objects interactive help message
   * In          : unsigned int flags
   *               ObjectId iconbar
-  *               char *message_text
+  *               const char *message_text
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *iconbar_set_help_message ( unsigned int flags,
                                                     ObjectId iconbar,
-                                                    char *message_text
+                                                    const char *message_text
                                                   );
  
  
@@ -327,14 +327,14 @@
   * Description : Sets the text string that will be used for text & sprite iconbar objects
   * In          : unsigned int flags
   *               ObjectId iconbar
-  *               char *text
+  *               const char *text
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *iconbar_set_text ( unsigned int flags,
                                             ObjectId iconbar,
-                                            char *text
+                                            const char *text
                                           );
  
  
@@ -362,14 +362,14 @@
   * Description : Sets the sprite to be used for the iconbar object
   * In          : unsigned int flags
   *               ObjectId iconbar
-  *               char *sprite_name
+  *               const char *sprite_name
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *iconbar_set_sprite ( unsigned int flags,
                                               ObjectId iconbar,
-                                              char *sprite_name
+                                              const char *sprite_name
                                             );
  
  
