@@ -254,14 +254,14 @@
   * Description : Sets the title for the specified prog info object
   * In          : unsigned int flags
   *               ObjectId proginfo
-  *               char *title
+  *               const char *title
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *proginfo_set_title ( unsigned int flags,
                                               ObjectId proginfo,
-                                              char *title
+                                              const char *title
                                             );
  
  
@@ -320,14 +320,14 @@
   * Description : Sets the version string for the prog info object
   * In          : unsigned int flags
   *               ObjectId proginfo
-  *               char *version_string
+  *               const char *version_string
   * Out         : None
   * Returns     : pointer to error block
   */
  
  extern _Optional _kernel_oserror *proginfo_set_version ( unsigned int flags,
                                                 ObjectId proginfo,
-                                                char *version_string
+                                                const char *version_string
                                               );
  
  
