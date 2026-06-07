@@ -28,6 +28,8 @@
 #include "wimp.h"
 #endif
 
+#include <stdint.h>
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -180,12 +182,12 @@ _kernel_oserror *wimp_create_submenu    (void * handle,
                                         int x,int y);
 
 typedef struct {
-   int r2;         /* ignored on entry */
-   int r3;
-   int r4;
-   int r5;
-   int r6;
-   int r7;
+   intptr_t r2;         /* ignored on entry */
+   intptr_t r3;
+   intptr_t r4;
+   intptr_t r5;
+   intptr_t r6;
+   intptr_t r7;
 }SpriteParams;
 
 _kernel_oserror *wimp_sprite_op         (int code,
@@ -222,8 +224,8 @@ _kernel_oserror *wimp_transfer_block    (int sh,
                                         int size);
 
 typedef struct {
-   int r0;
-   int r1;
+   intptr_t r0;
+   intptr_t r1;
 } WimpSysInfo;
 
 _kernel_oserror *wimp_read_sys_info     (int reason,
