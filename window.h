@@ -287,14 +287,13 @@
   * Returns     : pointer to error block
   */
  
- extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
-                                                   int *x_pos,
-                                                   int *y_pos,
-                                                   int *buttons,
-                                                   ObjectId *window,
-                                                   ComponentId *component
-                                                 );
- 
+extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
+                                                            _Optional int *x_pos,
+                                                            _Optional int *y_pos,
+                                                            _Optional int *buttons,
+                                                            _Optional ObjectId *window,
+                                                            _Optional ComponentId *component
+                                                          );
  
  /*
   * Name        : window_get_tool_bars
