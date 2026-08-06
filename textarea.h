@@ -188,7 +188,7 @@
  extern _Optional _kernel_oserror *textarea_get_state ( unsigned int flags,
                                               ObjectId window,
                                               ComponentId textarea,
-                                              unsigned int *state
+                                              _Optional unsigned int *state
                                             );
  
  
@@ -209,7 +209,7 @@
                                                        ComponentId textarea,
                                                        char *buffer,
                                                        int size,
-                                                       unsigned int *nbytes
+                                                       _Optional unsigned int *nbytes
                                                      );
  
  
@@ -247,8 +247,8 @@
  extern _Optional _kernel_oserror *textarea_get_selection_points ( unsigned int flags,
                                                          ObjectId window,
                                                          ComponentId textarea,
-                                                         unsigned int *index_start,
-                                                         unsigned int *index_end
+                                                         _Optional unsigned int *index_start,
+                                                         _Optional unsigned int *index_end
                                                        );
  
  
@@ -286,8 +286,8 @@
  extern _Optional _kernel_oserror *textarea_get_colour ( unsigned int flags,
                                                ObjectId window,
                                                ComponentId textarea,
-                                               unsigned int *foreground,
-                                               unsigned int *background
+                                               _Optional unsigned int *foreground,
+                                               _Optional unsigned int *background
                                              );
  
  
@@ -308,7 +308,7 @@
                                              ComponentId writable,
                                              char *buffer,
                                              int buff_size,
-                                             int *nbytes
+                                             _Optional int *nbytes
                                            );
  
  
@@ -386,7 +386,7 @@
  extern _Optional _kernel_oserror *textarea_get_cursor_position ( unsigned int flags,
                                                         ObjectId window,
                                                         ComponentId textarea,
-                                                        unsigned int *index
+                                                        _Optional unsigned int *index
                                                       );
  
  

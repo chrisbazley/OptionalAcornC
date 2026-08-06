@@ -431,7 +431,7 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
  
  extern _Optional _kernel_oserror *window_set_pointer ( unsigned int flags,
                                               ObjectId window,
-                                              const char *sprite_name,
+                                              _Optional const char *sprite_name,
                                               int x_hot_spot,
                                               int y_hot_spot
                                             );

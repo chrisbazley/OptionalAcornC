@@ -225,7 +225,7 @@
                                           ObjectId menu,
                                           char *buffer,
                                           int buff_size,
-                                          int *nbytes
+                                          _Optional int *nbytes
                                         );
  
  
@@ -256,7 +256,7 @@
  
  extern _Optional _kernel_oserror *menu_get_width ( unsigned int flags,
                                           ObjectId menu,
-                                          int *width
+                                          _Optional int *width
                                         );
  
  
@@ -271,7 +271,7 @@
  
  extern _Optional _kernel_oserror *menu_get_height ( unsigned int flags,
                                            ObjectId menu,
-                                           int *height
+                                           _Optional int *height
                                          );
  
  
@@ -306,7 +306,7 @@
                                           ObjectId menu,
                                           ComponentId at_entry,
                                           const char *entry_description,
-                                          ComponentId *new_entry
+                                          _Optional ComponentId *new_entry
                                         );
  
  
@@ -325,7 +325,7 @@
                                                  ObjectId menu,
                                                  char *buffer,
                                                  int buff_size,
-                                                 int *nbytes
+                                                 _Optional int *nbytes
                                                );
  
  
@@ -362,7 +362,7 @@
                                                        ComponentId entry,
                                                        char *buffer,
                                                        int buff_size,
-                                                       int *nbytes
+                                                       _Optional int *nbytes
                                                      );
  
  
@@ -397,7 +397,7 @@
  extern _Optional _kernel_oserror *menu_get_click_event ( unsigned int flags,
                                                 ObjectId menu,
                                                 ComponentId entry,
-                                                int *toolbox_event
+                                                _Optional int *toolbox_event
                                               );
  
  
@@ -433,8 +433,8 @@
  extern _Optional _kernel_oserror *menu_get_click_show ( unsigned int flags,
                                                ObjectId menu,
                                                ComponentId entry,
-                                               ObjectId *object,
-                                               int *show_flags
+                                               _Optional ObjectId *object,
+                                               _Optional int *show_flags
                                              );
  
  
@@ -471,7 +471,7 @@
  extern _Optional _kernel_oserror *menu_get_sub_menu_event ( unsigned int flags,
                                                    ObjectId menu,
                                                    ComponentId entry,
-                                                   int *toolbox_event
+                                                   _Optional int *toolbox_event
                                                  );
  
  
@@ -506,7 +506,7 @@
  extern _Optional _kernel_oserror *menu_get_sub_menu_show ( unsigned int flags,
                                                   ObjectId menu,
                                                   ComponentId entry,
-                                                  ObjectId *sub_menu
+                                                  _Optional ObjectId *sub_menu
                                                 );
  
  
@@ -545,7 +545,7 @@
                                                  ComponentId entry,
                                                  char *buffer,
                                                  int buff_size,
-                                                 int *nbytes
+                                                 _Optional int *nbytes
                                                );
  
  
@@ -584,7 +584,7 @@
                                                ComponentId entry,
                                                char *buffer,
                                                int buff_size,
-                                               int *nbytes
+                                               _Optional int *nbytes
                                              );
  
  
@@ -619,7 +619,7 @@
  extern _Optional _kernel_oserror *menu_get_fade ( unsigned int flags,
                                          ObjectId menu,
                                          ComponentId entry,
-                                         int *faded
+                                         _Optional int *faded
                                        );
  
  
@@ -654,7 +654,7 @@
  extern _Optional _kernel_oserror *menu_get_tick ( unsigned int flags,
                                          ObjectId menu,
                                          ComponentId entry,
-                                         int *ticked
+                                         _Optional int *ticked
                                        );
  
  
