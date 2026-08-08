@@ -319,8 +319,8 @@ extern _kernel_oserror *scrolllist_add_item ( unsigned int flags,
                                               ObjectId window,
                                               ComponentId scrolllist,
                                               const char *text,
-                                              const void *sprite_area,
-                                              const char *sprite_name,
+                                              _Optional const void *sprite_area,
+                                              _Optional const char *sprite_name,
                                               int index
                                             );
 
