@@ -182,7 +182,7 @@
  
  extern _Optional _kernel_oserror *iconbar_get_icon_handle ( unsigned int flags,
                                                    ObjectId iconbar,
-                                                   int *icon_handle
+                                                   _Optional int *icon_handle
                                                  );
  
  
@@ -213,7 +213,7 @@
  
  extern _Optional _kernel_oserror *iconbar_get_menu ( unsigned int flags,
                                             ObjectId iconbar,
-                                            ObjectId *menu_id
+                                            _Optional ObjectId *menu_id
                                           );
  
  
@@ -247,8 +247,8 @@
  
  extern _Optional _kernel_oserror *iconbar_get_event ( unsigned int flags,
                                              ObjectId iconbar,
-                                             int *select_event,
-                                             int *adjust_event
+                                             _Optional int *select_event,
+                                             _Optional int *adjust_event
                                            );
  
  
@@ -282,8 +282,8 @@
  
  extern _Optional _kernel_oserror *iconbar_get_show ( unsigned int flags,
                                             ObjectId iconbar,
-                                            ObjectId *select,
-                                            ObjectId *adjust
+                                            _Optional ObjectId *select,
+                                            _Optional ObjectId *adjust
                                           );
  
  

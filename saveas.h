@@ -264,7 +264,7 @@
  
  extern _Optional _kernel_oserror *saveas_get_file_size ( unsigned int flags,
                                                 ObjectId saveas,
-                                                int *file_size
+                                                _Optional int *file_size
                                               );
  
  
@@ -295,7 +295,7 @@
  
  extern _Optional _kernel_oserror *saveas_get_file_type ( unsigned int flags,
                                                 ObjectId saveas,
-                                                int *file_type
+                                                _Optional int *file_type
                                               );
  
  
@@ -365,7 +365,7 @@
                                             ObjectId saveas,
                                             char *buffer,
                                             int buff_size,
-                                            int *nbytes
+                                            _Optional int *nbytes
                                           );
  
  
@@ -396,7 +396,7 @@
  
  extern _Optional _kernel_oserror *saveas_get_window_id ( unsigned int flags,
                                                 ObjectId saveas,
-                                                ObjectId *window
+                                                _Optional ObjectId *window
                                               );
  
  

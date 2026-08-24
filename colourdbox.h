@@ -175,7 +175,7 @@
  
  extern _Optional _kernel_oserror *colourdbox_get_none_available ( unsigned int flags,
                                                          ObjectId colourdbox,
-                                                         int *out_flags
+                                                         _Optional int *out_flags
                                                        );
  
  
@@ -210,7 +210,7 @@
                                                        ObjectId colourdbox,
                                                        int *buffer,
                                                        int buff_size,
-                                                       int *nbytes
+                                                       _Optional int *nbytes
                                                      );
  
  
@@ -245,8 +245,8 @@
                                                  ObjectId colourdbox,
                                                  int *buffer,
                                                  int buff_size,
-                                                 int *outflags,
-                                                 int *nbytes
+                                                 _Optional int *outflags,
+                                                 _Optional int *nbytes
                                                );
  
  
@@ -277,7 +277,7 @@
  
  extern _Optional _kernel_oserror *colourdbox_get_dialogue_handle ( unsigned int flags,
                                                           ObjectId colourdbox,
-                                                          int *dialogue_handle
+                                                          _Optional int *dialogue_handle
                                                         );
  
  
@@ -292,7 +292,7 @@
  
  extern _Optional _kernel_oserror *colourdbox_get_wimp_handle ( unsigned int flags,
                                                       ObjectId colourdbox,
-                                                      int *wimp_handle
+                                                      _Optional int *wimp_handle
                                                     );
  
  

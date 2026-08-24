@@ -169,7 +169,7 @@
                                            ObjectId scale,
                                            char *buffer,
                                            int buff_size,
-                                           int *nbytes
+                                           _Optional int *nbytes
                                          );
  
  
@@ -202,9 +202,9 @@
  
  extern _Optional _kernel_oserror *scale_get_bounds ( unsigned int flags,
                                             ObjectId scale,
-                                            int *lower_bound,
-                                            int *upper_bound,
-                                            int *step_size
+                                            _Optional int *lower_bound,
+                                            _Optional int *upper_bound,
+                                            _Optional int *step_size
                                           );
  
  
@@ -239,7 +239,7 @@
  
  extern _Optional _kernel_oserror *scale_get_value ( unsigned int flags,
                                            ObjectId scale,
-                                           int *value
+                                           _Optional int *value
                                          );
  
  
@@ -270,7 +270,7 @@
  
  extern _Optional _kernel_oserror *scale_get_window_id ( unsigned int flags,
                                                ObjectId scale,
-                                               ObjectId *window
+                                               _Optional ObjectId *window
                                              );
  
  

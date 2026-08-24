@@ -157,11 +157,11 @@ typedef struct
  * in the event will be zero.
  */
 
-extern _kernel_oserror *scrolllist_select_item ( unsigned int flags,
-                                                 ObjectId window,
-                                                 ComponentId scrolllist,
-                                                 int index
-                                               );
+extern _Optional _kernel_oserror *scrolllist_select_item ( unsigned int flags,
+                                                           ObjectId window,
+                                                           ComponentId scrolllist,
+                                                           int index
+                                                         );
 
 
 /*
@@ -177,13 +177,13 @@ extern _kernel_oserror *scrolllist_select_item ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_set_font ( unsigned int flags,
-                                              ObjectId window,
-                                              ComponentId scrolllist,
-                                              const char *font_name,
-                                              unsigned int width,
-                                              unsigned int height
-                                            );
+extern _Optional _kernel_oserror *scrolllist_set_font ( unsigned int flags,
+                                                        ObjectId window,
+                                                        ComponentId scrolllist,
+                                                        const char *font_name,
+                                                        unsigned int width,
+                                                        unsigned int height
+                                                      );
 
 
 /*
@@ -197,12 +197,12 @@ extern _kernel_oserror *scrolllist_set_font ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_get_colour ( unsigned int flags,
-                                                ObjectId window,
-                                                ComponentId scrolllist,
-                                                unsigned int *foreground,
-                                                unsigned int *background
-                                              );
+extern _Optional _kernel_oserror *scrolllist_get_colour ( unsigned int flags,
+                                                          ObjectId window,
+                                                          ComponentId scrolllist,
+                                                          _Optional unsigned int *foreground,
+                                                          _Optional unsigned int *background
+                                                        );
 
 
 /*
@@ -217,12 +217,12 @@ extern _kernel_oserror *scrolllist_get_colour ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_set_colour ( unsigned int flags,
-                                                ObjectId window,
-                                                ComponentId scrolllist,
-                                                unsigned int foreground,
-                                                unsigned int background
-                                              );
+extern _Optional _kernel_oserror *scrolllist_set_colour ( unsigned int flags,
+                                                          ObjectId window,
+                                                          ComponentId scrolllist,
+                                                          unsigned int foreground,
+                                                          unsigned int background
+                                                        );
 
 
 /*
@@ -238,14 +238,14 @@ extern _kernel_oserror *scrolllist_set_colour ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_get_item_text ( unsigned int flags,
-                                                   ObjectId window,
-                                                   ComponentId scrolllist,
-                                                   char *buffer,
-                                                   int size,
-                                                   int index,
-                                                   int *nbytes
-                                                 );
+extern _Optional _kernel_oserror *scrolllist_get_item_text ( unsigned int flags,
+                                                             ObjectId window,
+                                                             ComponentId scrolllist,
+                                                             char *buffer,
+                                                             int size,
+                                                             int index,
+                                                             _Optional int *nbytes
+                                                           );
 
 /*
  * Name        : scrolllist_set_item_text
@@ -258,12 +258,12 @@ extern _kernel_oserror *scrolllist_get_item_text ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_set_item_text ( unsigned int flags,
-                                                   ObjectId window,
-                                                   ComponentId scrolllist,
-                                                   const char *new_text,
-                                                   int index
-                                                 );
+extern _Optional _kernel_oserror *scrolllist_set_item_text ( unsigned int flags,
+                                                             ObjectId window,
+                                                             ComponentId scrolllist,
+                                                             const char *new_text,
+                                                             int index
+                                                           );
 
 
 /*
@@ -277,11 +277,11 @@ extern _kernel_oserror *scrolllist_set_item_text ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_set_state ( unsigned int flags,
-                                               ObjectId window,
-                                               ComponentId scrolllist,
-                                               unsigned int state
-                                             );
+extern _Optional _kernel_oserror *scrolllist_set_state ( unsigned int flags,
+                                                         ObjectId window,
+                                                         ComponentId scrolllist,
+                                                         unsigned int state
+                                                       );
 
 
 /*
@@ -294,11 +294,11 @@ extern _kernel_oserror *scrolllist_set_state ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_get_state ( unsigned int flags,
-                                               ObjectId window,
-                                               ComponentId scrolllist,
-                                               unsigned int *state
-                                             );
+extern _Optional _kernel_oserror *scrolllist_get_state ( unsigned int flags,
+                                                         ObjectId window,
+                                                         ComponentId scrolllist,
+                                                         _Optional unsigned int *state
+                                                       );
 
 
 /*
@@ -315,14 +315,14 @@ extern _kernel_oserror *scrolllist_get_state ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_add_item ( unsigned int flags,
-                                              ObjectId window,
-                                              ComponentId scrolllist,
-                                              const char *text,
-                                              _Optional const void *sprite_area,
-                                              _Optional const char *sprite_name,
-                                              int index
-                                            );
+extern _Optional _kernel_oserror *scrolllist_add_item ( unsigned int flags,
+                                                        ObjectId window,
+                                                        ComponentId scrolllist,
+                                                        const char *text,
+                                                        _Optional const void *sprite_area,
+                                                        _Optional const char *sprite_name,
+                                                        int index
+                                                      );
 
 
 /*
@@ -343,12 +343,12 @@ extern _kernel_oserror *scrolllist_add_item ( unsigned int flags,
  * be present in the event received.
  */
 
-extern _kernel_oserror *scrolllist_delete_items ( unsigned int flags,
-                                                  ObjectId window,
-                                                  ComponentId scrolllist,
-                                                  int start,
-                                                  int end
-                                                );
+extern _Optional _kernel_oserror *scrolllist_delete_items ( unsigned int flags,
+                                                            ObjectId window,
+                                                            ComponentId scrolllist,
+                                                            int start,
+                                                            int end
+                                                          );
 
 
 /*
@@ -362,12 +362,12 @@ extern _kernel_oserror *scrolllist_delete_items ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_get_selected ( unsigned int flags,
-                                                  ObjectId window,
-                                                  ComponentId scrolllist,
-                                                  int offset,
-                                                  int *new_offset
-                                                );
+extern _Optional _kernel_oserror *scrolllist_get_selected ( unsigned int flags,
+                                                            ObjectId window,
+                                                            ComponentId scrolllist,
+                                                            int offset,
+                                                            _Optional int *new_offset
+                                                          );
 
 
 /*
@@ -381,11 +381,11 @@ extern _kernel_oserror *scrolllist_get_selected ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_make_visible ( unsigned int flags,
-                                                  ObjectId window,
-                                                  ComponentId scrolllist,
-                                                  int index
-                                                );
+extern _Optional _kernel_oserror *scrolllist_make_visible ( unsigned int flags,
+                                                            ObjectId window,
+                                                            ComponentId scrolllist,
+                                                            int index
+                                                          );
 
 
 /*
@@ -409,11 +409,11 @@ extern _kernel_oserror *scrolllist_make_visible ( unsigned int flags,
  * given in 'index' is irrelevant.
  */
 
-extern _kernel_oserror *scrolllist_deselect_item ( unsigned int flags,
-                                                   ObjectId window,
-                                                   ComponentId scrolllist,
-                                                   int index
-                                                 );
+extern _Optional _kernel_oserror *scrolllist_deselect_item ( unsigned int flags,
+                                                             ObjectId window,
+                                                             ComponentId scrolllist,
+                                                             int index
+                                                           );
 
 
 /*
@@ -427,11 +427,11 @@ extern _kernel_oserror *scrolllist_deselect_item ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
-extern _kernel_oserror *scrolllist_count_items ( unsigned int flags,
-                                                 ObjectId window,
-                                                 ComponentId scrolllist,
-                                                 unsigned int *items
-                                               );
+extern _Optional _kernel_oserror *scrolllist_count_items ( unsigned int flags,
+                                                           ObjectId window,
+                                                           ComponentId scrolllist,
+                                                           unsigned int *items
+                                                         );
 
 #ifdef __cplusplus
   }

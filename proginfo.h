@@ -175,7 +175,7 @@
  
  extern _Optional _kernel_oserror *proginfo_get_web_event ( unsigned int flags,
                                                   ObjectId proginfo,
-                                                  int *event
+                                                  _Optional int *event
                                                 );
  
  
@@ -210,7 +210,7 @@
                                             ObjectId proginfo,
                                             char *buffer,
                                             int buff_size,
-                                            int *nbytes
+                                            _Optional int *nbytes
                                           );
  
  
@@ -245,7 +245,7 @@
                                               ObjectId proginfo,
                                               char *buffer,
                                               int buff_size,
-                                              int *nbytes
+                                              _Optional int *nbytes
                                             );
  
  
@@ -276,7 +276,7 @@
  
  extern _Optional _kernel_oserror *proginfo_get_licence_type ( unsigned int flags,
                                                      ObjectId proginfo,
-                                                     int *licence_type
+                                                     _Optional int *licence_type
                                                    );
  
  
@@ -311,7 +311,7 @@
                                                 ObjectId proginfo,
                                                 char *buffer,
                                                 int buff_size,
-                                                int *nbytes
+                                                _Optional int *nbytes
                                               );
  
  
@@ -342,7 +342,7 @@
  
  extern _Optional _kernel_oserror *proginfo_get_window_id ( unsigned int flags,
                                                   ObjectId proginfo,
-                                                  ObjectId *window
+                                                  _Optional ObjectId *window
                                                 );
  
  

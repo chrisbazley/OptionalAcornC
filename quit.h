@@ -161,7 +161,7 @@
  
  extern _Optional _kernel_oserror *quit_get_window_id ( unsigned int flags,
                                               ObjectId quit,
-                                              ObjectId *window
+                                              _Optional ObjectId *window
                                             );
  
  
@@ -196,7 +196,7 @@
                                             ObjectId quit,
                                             char *buffer,
                                             int buff_size,
-                                            int *nbytes
+                                            _Optional int *nbytes
                                           );
  
  
@@ -231,7 +231,7 @@
                                           ObjectId quit,
                                           char *buffer,
                                           int buff_size,
-                                          int *nbytes
+                                          _Optional int *nbytes
                                         );
  
  

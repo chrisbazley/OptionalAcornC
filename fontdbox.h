@@ -169,7 +169,7 @@
                                               ObjectId fontdbox,
                                               char *buffer,
                                               int buff_size,
-                                              int *nbytes
+                                              _Optional int *nbytes
                                             );
  
  
@@ -204,7 +204,7 @@
                                                    ObjectId fontdbox,
                                                    char *buffer,
                                                    int buff_size,
-                                                   int *nbytes
+                                                   _Optional int *nbytes
                                                  );
  
  
@@ -236,8 +236,8 @@
  
  extern _Optional _kernel_oserror *fontdbox_get_size ( unsigned int flags,
                                              ObjectId fontdbox,
-                                             int *height,
-                                             int *aspect_ratio
+                                             _Optional int *height,
+                                             _Optional int *aspect_ratio
                                            );
  
  
@@ -274,7 +274,7 @@
                                              ObjectId fontdbox,
                                              char *buffer,
                                              int buff_size,
-                                             int *nbytes
+                                             _Optional int *nbytes
                                            );
  
  
@@ -305,7 +305,7 @@
  
  extern _Optional _kernel_oserror *fontdbox_get_window_id  ( unsigned int flags,
                                                    ObjectId fontdbox,
-                                                   ObjectId *window
+                                                   _Optional ObjectId *window
                                                  );
  
  

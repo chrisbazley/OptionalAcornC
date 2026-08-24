@@ -250,8 +250,8 @@
  extern _Optional _kernel_oserror *window_extract_gadget_info ( unsigned int flags,
                                               ObjectTemplateHeader *templ,
                                               ComponentId gadget,
-                                              void **desc,
-                                              int *size
+                                              void *_Optional *desc,
+                                              _Optional int *size
                                               );
  
  /*
@@ -383,7 +383,7 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
  extern _Optional _kernel_oserror *window_add_gadget ( unsigned int flags,
                                              ObjectId window,
                                              const Gadget *gadget,
-                                             ComponentId *gadget_component
+                                             _Optional ComponentId *gadget_component
                                            );
  
  
@@ -398,7 +398,7 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
  
  extern _Optional _kernel_oserror *window_get_wimp_handle ( unsigned int flags,
                                                   ObjectId window,
-                                                  int *window_handle
+                                                  _Optional int *window_handle
                                                 );
  
  
@@ -413,7 +413,7 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
  
  extern _Optional _kernel_oserror *window_get_menu ( unsigned int flags,
                                            ObjectId window,
-                                           ObjectId *menu_id
+                                           _Optional ObjectId *menu_id
                                          );
  
  
@@ -454,9 +454,9 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
                                               ObjectId window,
                                               char *buffer,
                                               int buff_size,
-                                              int *nbytes,
-                                              int *x_hot_spot,
-                                              int *y_hot_spot
+                                              _Optional int *nbytes,
+                                              _Optional int *x_hot_spot,
+                                              _Optional int *y_hot_spot
                                             );
  
  
@@ -491,7 +491,7 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
                                                    ObjectId window,
                                                    char *buffer,
                                                    int buff_len,
-                                                   int *nbytes
+                                                   _Optional int *nbytes
                                                  );
  
  
@@ -562,7 +562,7 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
                                             ObjectId window,
                                             char *buffer,
                                             int buff_size,
-                                            int *nbytes
+                                            _Optional int *nbytes
                                           );
  
  
@@ -593,7 +593,7 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
  
  extern _Optional _kernel_oserror *window_get_default_focus ( unsigned int flags,
                                                     ObjectId window,
-                                                    ComponentId *focus
+                                                    _Optional ComponentId *focus
                                                   );
  
  

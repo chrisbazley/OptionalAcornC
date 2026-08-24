@@ -216,7 +216,7 @@
  
  extern _Optional _kernel_oserror *printdbox_get_draft ( unsigned int flags,
                                                ObjectId printdbox,
-                                               int *draft
+                                               _Optional int *draft
                                              );
  
  
@@ -251,7 +251,7 @@
                                                ObjectId printdbox,
                                                char *buffer,
                                                int buff_size,
-                                               int *nbytes
+                                               _Optional int *nbytes
                                              );
  
  
@@ -266,7 +266,7 @@
  
  extern _Optional _kernel_oserror *printdbox_get_orientation ( unsigned int flags,
                                                      ObjectId printdbox,
-                                                     int *orientation
+                                                     _Optional int *orientation
                                                    );
  
  
@@ -297,7 +297,7 @@
  
  extern _Optional _kernel_oserror *printdbox_get_scale ( unsigned int flags,
                                                ObjectId printdbox,
-                                               int *scale_factor
+                                               _Optional int *scale_factor
                                              );
  
  
@@ -328,7 +328,7 @@
  
  extern _Optional _kernel_oserror *printdbox_get_copies ( unsigned int flags,
                                                 ObjectId printdbox,
-                                                int *copies
+                                                _Optional int *copies
                                               );
  
  
@@ -360,8 +360,8 @@
  
  extern _Optional _kernel_oserror *printdbox_get_page_range ( unsigned int flags,
                                                     ObjectId printdbox,
-                                                    int *start,
-                                                    int *end
+                                                    _Optional int *start,
+                                                    _Optional int *end
                                                   );
  
  
@@ -394,7 +394,7 @@
  
  extern _Optional _kernel_oserror *printdbox_get_window_id ( unsigned int flags,
                                                    ObjectId printdbox,
-                                                   ObjectId *window
+                                                   _Optional ObjectId *window
                                                  );
  
  

@@ -146,7 +146,7 @@
  extern _Optional _kernel_oserror *gadget_get_type ( unsigned int flags,
                                            ObjectId window,
                                            ComponentId gadget,
-                                           int *type
+                                           _Optional int *type
                                          );
  
  
@@ -259,7 +259,7 @@
  extern _Optional _kernel_oserror *gadget_get_flags ( unsigned int flags,
                                             ObjectId window,
                                             ComponentId gadget,
-                                            unsigned int *flags_settings
+                                            _Optional unsigned int *flags_settings
                                           );
  
  
@@ -408,7 +408,7 @@
  extern _Optional _kernel_oserror *actionbutton_get_event ( unsigned int flags,
                                                   ObjectId window,
                                                   ComponentId action_button,
-                                                  int *event
+                                                  _Optional int *event
                                                 );
  
  
@@ -446,8 +446,8 @@
  extern _Optional _kernel_oserror *actionbutton_get_click_show ( unsigned int flags,
                                                        ObjectId window,
                                                        ComponentId action_button,
-                                                       ObjectId *object,
-                                                       unsigned int *show_flags
+                                                       _Optional ObjectId *object,
+                                                       _Optional unsigned int *show_flags
                                                      );
  
  /*
@@ -606,7 +606,7 @@
  extern _Optional _kernel_oserror *optionbutton_get_event ( unsigned int flags,
                                                   ObjectId window,
                                                   ComponentId option_button,
-                                                  int *event
+                                                  _Optional int *event
                                                 );
  
  
@@ -641,7 +641,7 @@
  extern _Optional _kernel_oserror *optionbutton_get_state ( unsigned int flags,
                                                   ObjectId window,
                                                   ComponentId option_button,
-                                                  int *state
+                                                  _Optional int *state
                                                 );
  
  
@@ -848,7 +848,7 @@
  extern _Optional _kernel_oserror *radiobutton_get_event ( unsigned int flags,
                                                  ObjectId window,
                                                  ComponentId radio_button,
-                                                 int *event
+                                                 _Optional int *event
                                                );
  
  
@@ -1247,8 +1247,8 @@
  extern _Optional _kernel_oserror *slider_get_colour ( unsigned int flags,
                                              ObjectId window,
                                              ComponentId slider,
-                                             int *bar_colour,
-                                             int *back_colour
+                                             _Optional int *bar_colour,
+                                             _Optional int *back_colour
                                            );
  
  
@@ -1287,9 +1287,9 @@
  extern _Optional _kernel_oserror *slider_get_bounds( unsigned int flags,
                                             ObjectId window,
                                             ComponentId slider,
-                                            int *upper_bound,
-                                            int *lower_bound,
-                                            int *step_size
+                                            _Optional int *upper_bound,
+                                            _Optional int *lower_bound,
+                                            _Optional int *step_size
                                           );
  
  
@@ -1328,7 +1328,7 @@
  extern _Optional _kernel_oserror *slider_get_value ( unsigned int flags,
                                             ObjectId window,
                                             ComponentId slider,
-                                            int *value
+                                            _Optional int *value
                                           );
  
  
@@ -1449,7 +1449,7 @@
  extern _Optional _kernel_oserror *draggable_get_state ( unsigned int flags,
                                                ObjectId window,
                                                ComponentId draggable,
-                                               int *state
+                                               _Optional int *state
                                              );
  
  
@@ -1625,7 +1625,7 @@
  extern _Optional _kernel_oserror *popup_get_menu ( unsigned int flags,
                                           ObjectId window,
                                           ComponentId popup,
-                                          ObjectId *menu
+                                          _Optional ObjectId *menu
                                         );
  
  
@@ -1791,10 +1791,10 @@
  extern _Optional _kernel_oserror *numberrange_get_components ( unsigned int flags,
                                                       ObjectId window,
                                                       ComponentId number_range,
-                                                      ComponentId *numeric_field,
-                                                      ComponentId *left_adjuster,
-                                                      ComponentId *right_adjuster,
-                                                      ComponentId *slider
+                                                      _Optional ComponentId *numeric_field,
+                                                      _Optional ComponentId *left_adjuster,
+                                                      _Optional ComponentId *right_adjuster,
+                                                      _Optional ComponentId *slider
                                                     );
  
  
@@ -1829,7 +1829,7 @@
  extern _Optional _kernel_oserror *numberrange_get_value ( unsigned int flags,
                                                  ObjectId window,
                                                  ComponentId number_range,
-                                                 int *value
+                                                 _Optional int *value
                                                );
  
  
@@ -1873,10 +1873,10 @@
  extern _Optional _kernel_oserror *numberrange_get_bounds ( unsigned int flags,
                                                   ObjectId window,
                                                   ComponentId number_range,
-                                                  int *lower_bound,
-                                                  int *upper_bound,
-                                                  int *step_size,
-                                                  int *precision
+                                                  _Optional int *lower_bound,
+                                                  _Optional int *upper_bound,
+                                                  _Optional int *step_size,
+                                                  _Optional int *precision
                                                 );
  
  
@@ -1985,8 +1985,8 @@
  extern _Optional _kernel_oserror *stringset_get_components ( unsigned int flags,
                                                     ObjectId window,
                                                     ComponentId string_set,
-                                                    ComponentId *alphanumeric_field,
-                                                    ComponentId *popup_menu
+                                                    _Optional ComponentId *alphanumeric_field,
+                                                    _Optional ComponentId *popup_menu
                                                   );
  
  
@@ -2160,7 +2160,7 @@
  extern _Optional _kernel_oserror *button_get_flags ( unsigned int flags,
                                             ObjectId window,
                                             ComponentId button,
-                                            int *icon_flags
+                                            _Optional int *icon_flags
                                           );
  
  

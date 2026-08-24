@@ -160,7 +160,7 @@
  
  extern _Optional _kernel_oserror *fileinfo_get_window_id ( unsigned int flags,
                                                   ObjectId fileinfo,
-                                                  ObjectId *window
+                                                  _Optional ObjectId *window
                                                 );
  
  
@@ -191,7 +191,7 @@
  
  extern _Optional _kernel_oserror *fileinfo_get_modified ( unsigned int flags,
                                                  ObjectId fileinfo,
-                                                 int *modified
+                                                 _Optional int *modified
                                                );
  
  
@@ -222,7 +222,7 @@
  
  extern _Optional _kernel_oserror *fileinfo_get_file_type ( unsigned int flags,
                                                   ObjectId fileinfo,
-                                                  int *file_type
+                                                  _Optional int *file_type
                                                 );
  
  
@@ -257,7 +257,7 @@
                                                   ObjectId fileinfo,
                                                   char *buffer,
                                                   int buff_size,
-                                                  int *nbytes
+                                                  _Optional int *nbytes
                                                 );
  
  
@@ -288,7 +288,7 @@
  
  extern _Optional _kernel_oserror *fileinfo_get_file_size ( unsigned int flags,
                                                   ObjectId fileinfo,
-                                                  int *file_size
+                                                  _Optional int *file_size
                                                 );
  
  
@@ -355,7 +355,7 @@
                                               ObjectId fileinfo,
                                               char *buffer,
                                               int buff_size,
-                                              int *nbytes
+                                              _Optional int *nbytes
                                             );
  
  

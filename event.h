@@ -74,26 +74,26 @@
  
  /* ------------------------------------ event handler registering ------------------------------- */
  
- _kernel_oserror *event_register_wimp_handler (ObjectId object_id, int event_code,
-                                               WimpEventHandler *handler, void *handle);
+ _Optional _kernel_oserror *event_register_wimp_handler (ObjectId object_id, int event_code,
+                                                         WimpEventHandler *handler, void *handle);
  
- _kernel_oserror *event_deregister_wimp_handler (ObjectId object_id, int event_code,
-                                                 WimpEventHandler *handler, void *handle);
+ _Optional _kernel_oserror *event_deregister_wimp_handler (ObjectId object_id, int event_code,
+                                                           WimpEventHandler *handler, void *handle);
  
- _kernel_oserror *event_deregister_wimp_handlers_for_object (int object_id);
+ _Optional _kernel_oserror *event_deregister_wimp_handlers_for_object (int object_id);
  
  
- _kernel_oserror *event_register_toolbox_handler (ObjectId object_id, int event_code,
-                                                  ToolboxEventHandler *handler, void *handle);
+ _Optional _kernel_oserror *event_register_toolbox_handler (ObjectId object_id, int event_code,
+                                                            ToolboxEventHandler *handler, void *handle);
  
- _kernel_oserror *event_deregister_toolbox_handler (ObjectId object_id, int event_code,
-                                                    ToolboxEventHandler *handler, void *handle);
+ _Optional _kernel_oserror *event_deregister_toolbox_handler (ObjectId object_id, int event_code,
+                                                              ToolboxEventHandler *handler, void *handle);
  
- _kernel_oserror *event_deregister_toolbox_handlers_for_object (int object_id);
+ _Optional _kernel_oserror *event_deregister_toolbox_handlers_for_object (int object_id);
  
- _kernel_oserror *event_register_message_handler (int msg_no, WimpMessageHandler *handler, void *handle);
+ _Optional _kernel_oserror *event_register_message_handler (int msg_no, WimpMessageHandler *handler, void *handle);
  
- _kernel_oserror *event_deregister_message_handler (int msg_no, WimpMessageHandler *handler, void *handle);
+ _Optional _kernel_oserror *event_deregister_message_handler (int msg_no, WimpMessageHandler *handler, void *handle);
  
  
  

@@ -412,7 +412,7 @@
  
  extern _Optional _kernel_oserror *toolbox_create_object ( unsigned int flags,
                                                  const void *name_or_template,
-                                                 ObjectId *id
+                                                 _Optional ObjectId *id
                                                );
  
  
