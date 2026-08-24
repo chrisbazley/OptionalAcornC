@@ -229,7 +229,7 @@ typedef struct {
 } WimpSysInfo;
 
 _Optional _kernel_oserror *wimp_read_sys_info     (int reason,
-                                                  _Optional WimpSysInfo *results);
+                                                  WimpSysInfo *results);
 
 _Optional _kernel_oserror *wimp_set_font_colours  (int fore,
                                                   int back);
