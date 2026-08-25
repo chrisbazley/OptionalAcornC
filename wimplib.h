@@ -83,7 +83,7 @@ _Optional _kernel_oserror *wimp_get_pointer_info  (WimpGetPointerInfoBlock *bloc
 
 #define CancelDrag 0
 
-_Optional _kernel_oserror *wimp_drag_box          (WimpDragBox *block);
+_Optional _kernel_oserror *wimp_drag_box          (_Optional WimpDragBox *block);
 
 _Optional _kernel_oserror *wimp_force_redraw      (int window_handle,
                                                   int xmin,
