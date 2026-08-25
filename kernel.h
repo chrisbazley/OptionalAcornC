@@ -27,7 +27,9 @@ typedef struct {
    intptr_t load, start, end, exec;
 }_kernel_osfile_block;
 
-#define _kernel_ERROR (-1)
+#define _kernel_NONX 0x80000000
+#define _kernel_ERROR (-2)
+
 int _kernel_osfile(int, const char *, _kernel_osfile_block *);
 int _kernel_osword(int, int *);
 _Optional _kernel_oserror *_swix(int, int, ...);
@@ -36,15 +38,21 @@ int _kernel_escape_seen(void);
 _Optional _kernel_oserror *_kernel_swi(int, _kernel_swi_regs *, _kernel_swi_regs *);
 _Optional _kernel_oserror *_kernel_swi_c(int, _kernel_swi_regs *, _kernel_swi_regs *, int *);
 int _kernel_osbyte(int, int, int);
-int _kernel_oscli(char *);
+int _kernel_osrdch(void);
+int _kernel_oswrch(int);
+int _kernel_osbget(unsigned);
+int _kernel_osbput(int, unsigned);
+int _kernel_osgbpb(int, unsigned, _kernel_osgbpb_block *);
+int _kernel_osfind(int, char *);
+int _kernel_osargs(int, unsigned, int);
+int _kernel_oscli(const char *);
+int _kernel_system(const char *, int);
 
-int _kernel_osgbpb(int, uintptr_t, _kernel_osgbpb_block *);
-_Optional _kernel_oserror *_kernel_setenv(const char *, const char*);
-_Optional _kernel_oserror *_kernel_getenv(const char *,  char*, uintptr_t);
+_Optional _kernel_oserror *_kernel_setenv(const char *,
+                                           _Optional const char *);
+_Optional _kernel_oserror *_kernel_getenv(const char *, char *, unsigned);
 
 _Optional _kernel_oserror *_kernel_irqs_off(void);
 _Optional _kernel_oserror *_kernel_irqs_on(void);
-
-int _kernel_oswrch(int ch);
 
 #endif
