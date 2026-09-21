@@ -34,6 +34,7 @@
 #define OS_SetColour 0
 #define Wimp_AutoScroll 0 
 #define Territory_ConvertDateAndTime 0
+#define TaskManager_EnumerateTasks 0
 #define Wimp_Extend 0
 #define OS_RemoveTickerEvent 0
 #define OS_CallAfter 0 
