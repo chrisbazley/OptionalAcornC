@@ -1140,7 +1140,7 @@
   * In          : unsigned int flags
   *               ObjectId window
   *               ComponentId writable
-  *               char *buffer
+  *               char *buffer (may be NULL if buff_size is 0)
   *               int buff_size
   * Out         : int *nbytes
   * Returns     : pointer to error block
@@ -1149,7 +1149,7 @@
  extern _Optional _kernel_oserror *writablefield_get_value ( unsigned int flags,
                                                    ObjectId window,
                                                    ComponentId writable,
-                                                   char *buffer,
+                                                   _Optional char *buffer,
                                                    int buff_size,
                                                    _Optional int *nbytes
                                                  );
