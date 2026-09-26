@@ -51,6 +51,10 @@
 #define ColourTrans_SetFontColours 0x04074f
 #define Font_LoseFont 0x040082
 #define OS_Byte 0x000006
+#define OS_Module 0x00001e
+#define OS_EvaluateExpression 0x00002d
+#define OS_ReadPalette 0x00002f
+#define OS_ScreenMode 0x000065
 
 #define _IN(c) (1U << (c))
 #define _OUT(c) (1U << (31 - (c)))
