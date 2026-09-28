@@ -42,7 +42,7 @@ int _kernel_osrdch(void);
 int _kernel_oswrch(int);
 int _kernel_osbget(unsigned);
 int _kernel_osbput(int, unsigned);
-int _kernel_osgbpb(int, unsigned, _kernel_osgbpb_block *);
+int _kernel_osgbpb(int, uintptr_t, _kernel_osgbpb_block *);
 int _kernel_osfind(int, char *);
 int _kernel_osargs(int, unsigned, int);
 int _kernel_oscli(const char *);
