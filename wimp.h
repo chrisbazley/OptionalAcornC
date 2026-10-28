@@ -34,6 +34,10 @@
 #ifndef __wimp_h
 #define __wimp_h
 
+#if !defined(USE_OPTIONAL) && !defined(_Optional)
+#define _Optional
+#endif
+
 
 
 
@@ -336,15 +340,18 @@ typedef struct
 
 /* Wimp_DragBox SWI */
 
+typedef void WimpDragCallback(void);
+
 typedef struct {
         int wimp_window;
         int drag_type;
         BBox dragging_box;
         BBox parent_box;
-        int *workspace;
-        void (*draw)(void);
-        void (*remove)(void);
-        void (*move)(void);
+        /* Workspace and callbacks are unused by standard drag types. */
+        _Optional int *workspace;
+        _Optional WimpDragCallback *draw;
+        _Optional WimpDragCallback *remove;
+        _Optional WimpDragCallback *move;
 } WimpDragBox;
 
 #define Wimp_DragBox_DragWindow         1
