@@ -23,3 +23,17 @@
 
 /* Compiling this translation unit verifies that the public headers are
  * mutually compatible and diagnostic-free. */
+
+#if defined(USE_OPTIONAL) && defined(__clang__)
+#if __has_warning("-Wnull-to-nonoptional")
+#pragma clang diagnostic error "-Wnull-to-nonoptional"
+#endif
+#endif
+
+/* Standard drag types need neither custom workspace nor callbacks.
+ * Exercise both explicit and implicit null initialisation. */
+const WimpDragBox standard_drag_box = {
+    .drag_type = Wimp_DragBox_DragPoint,
+    .workspace = 0,
+    .draw = 0,
+};
