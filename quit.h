@@ -192,9 +192,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *quit_get_message ( unsigned int flags,
                                             ObjectId quit,
-                                            char *buffer,
+                                            _Optional char *buffer,
                                             int buff_size,
                                             _Optional int *nbytes
                                           );
@@ -227,9 +228,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *quit_get_title ( unsigned int flags,
                                           ObjectId quit,
-                                          char *buffer,
+                                          _Optional char *buffer,
                                           int buff_size,
                                           _Optional int *nbytes
                                         );

@@ -204,10 +204,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *textarea_get_selection_text ( unsigned int flags,
                                                        ObjectId window,
                                                        ComponentId textarea,
-                                                       char *buffer,
+                                                       _Optional char *buffer,
                                                        int size,
                                                        _Optional unsigned int *nbytes
                                                      );
@@ -303,10 +304,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *textarea_get_text ( unsigned int flags,
                                              ObjectId window,
                                              ComponentId writable,
-                                             char *buffer,
+                                             _Optional char *buffer,
                                              int buff_size,
                                              _Optional int *nbytes
                                            );

@@ -165,9 +165,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *fontdbox_get_title ( unsigned int flags,
                                               ObjectId fontdbox,
-                                              char *buffer,
+                                              _Optional char *buffer,
                                               int buff_size,
                                               _Optional int *nbytes
                                             );
@@ -200,9 +201,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *fontdbox_get_try_string ( unsigned int flags,
                                                    ObjectId fontdbox,
-                                                   char *buffer,
+                                                   _Optional char *buffer,
                                                    int buff_size,
                                                    _Optional int *nbytes
                                                  );
@@ -270,9 +272,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *fontdbox_get_font ( unsigned int flags,
                                              ObjectId fontdbox,
-                                             char *buffer,
+                                             _Optional char *buffer,
                                              int buff_size,
                                              _Optional int *nbytes
                                            );

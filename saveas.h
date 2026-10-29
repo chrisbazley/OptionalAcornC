@@ -326,9 +326,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *saveas_get_file_name ( unsigned int flags,
                                                 ObjectId saveas,
-                                                char *buffer,
+                                                _Optional char *buffer,
                                                 int buff_size,
                                                 _Optional int *nbytes
                                               );
@@ -361,9 +362,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *saveas_get_title ( unsigned int flags,
                                             ObjectId saveas,
-                                            char *buffer,
+                                            _Optional char *buffer,
                                             int buff_size,
                                             _Optional int *nbytes
                                           );

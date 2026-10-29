@@ -247,9 +247,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *printdbox_get_title ( unsigned int flags,
                                                ObjectId printdbox,
-                                               char *buffer,
+                                               _Optional char *buffer,
                                                int buff_size,
                                                _Optional int *nbytes
                                              );

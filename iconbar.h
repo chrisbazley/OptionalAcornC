@@ -314,9 +314,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *iconbar_get_help_message ( unsigned int flags,
                                                     ObjectId iconbar,
-                                                    char *buffer,
+                                                    _Optional char *buffer,
                                                     int buff_size,
                                                     _Optional int *nbytes
                                                   );
@@ -349,9 +350,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *iconbar_get_text ( unsigned int flags,
                                             ObjectId iconbar,
-                                            char *buffer,
+                                            _Optional char *buffer,
                                             int buff_size,
                                             _Optional int *nbytes
                                           );
@@ -384,9 +386,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *iconbar_get_sprite ( unsigned int flags,
                                               ObjectId iconbar,
-                                              char *buffer,
+                                              _Optional char *buffer,
                                               int buff_len,
                                               _Optional int *nbytes
                                             );
