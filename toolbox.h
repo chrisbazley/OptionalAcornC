@@ -392,6 +392,7 @@
   *                written to the buffer
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *toolbox_get_template_name ( unsigned int flags,
                                                      ObjectId id,
                                                      _Optional char *buffer,

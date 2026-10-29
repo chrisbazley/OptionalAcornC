@@ -222,9 +222,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *menu_get_title ( unsigned int flags,
                                           ObjectId menu,
-                                          char *buffer,
+                                          _Optional char *buffer,
                                           int buff_size,
                                           _Optional int *nbytes
                                         );
@@ -322,9 +323,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *menu_get_help_message ( unsigned int flags,
                                                  ObjectId menu,
-                                                 char *buffer,
+                                                 _Optional char *buffer,
                                                  int buff_size,
                                                  _Optional int *nbytes
                                                );
@@ -358,10 +360,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *menu_get_entry_help_message ( unsigned int flags,
                                                        ObjectId menu,
                                                        ComponentId entry,
-                                                       char *buffer,
+                                                       _Optional char *buffer,
                                                        int buff_size,
                                                        _Optional int *nbytes
                                                      );
@@ -541,10 +544,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *menu_get_entry_sprite ( unsigned int flags,
                                                  ObjectId menu,
                                                  ComponentId entry,
-                                                 char *buffer,
+                                                 _Optional char *buffer,
                                                  int buff_size,
                                                  _Optional int *nbytes
                                                );
@@ -580,10 +584,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *menu_get_entry_text ( unsigned int flags,
                                                ObjectId menu,
                                                ComponentId entry,
-                                               char *buffer,
+                                               _Optional char *buffer,
                                                int buff_size,
                                                _Optional int *nbytes
                                              );

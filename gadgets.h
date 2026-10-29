@@ -180,6 +180,7 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *gadget_get_icon_list ( unsigned int flags,
                                                 ObjectId window,
                                                 ComponentId gadget,
@@ -201,10 +202,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *gadget_get_help_message ( unsigned int flags,
                                                    ObjectId window,
                                                    ComponentId gadget,
-                                                   char *buffer,
+                                                   _Optional char *buffer,
                                                    int buff_size,
                                                    _Optional int *nbytes
                                                  );
@@ -368,10 +370,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *actionbutton_get_text ( unsigned int flags,
                                                  ObjectId window,
                                                  ComponentId action_button,
-                                                 char *buffer,
+                                                 _Optional char *buffer,
                                                  int buff_size,
                                                  _Optional int *nbytes
                                                );
@@ -548,10 +551,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *optionbutton_get_label ( unsigned int flags,
                                                   ObjectId window,
                                                   ComponentId option_button,
-                                                  char *buffer,
+                                                  _Optional char *buffer,
                                                   int buff_size,
                                                   _Optional int *nbytes
                                                 );
@@ -789,10 +793,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *radiobutton_get_label ( unsigned int flags,
                                                  ObjectId window,
                                                  ComponentId radio_button,
-                                                 char *buffer,
+                                                 _Optional char *buffer,
                                                  int buff_size,
                                                  _Optional int *nbytes
                                                );
@@ -994,10 +999,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *displayfield_get_value ( unsigned int flags,
                                                   ObjectId window,
                                                   ComponentId display_field,
-                                                  char *buffer,
+                                                  _Optional char *buffer,
                                                   int buff_size,
                                                   _Optional int *nbytes
                                                 );
@@ -1146,10 +1152,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *writablefield_get_value ( unsigned int flags,
                                                    ObjectId window,
                                                    ComponentId writable,
-                                                   char *buffer,
+                                                   _Optional char *buffer,
                                                    int buff_size,
                                                    _Optional int *nbytes
                                                  );
@@ -1483,10 +1490,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *draggable_get_sprite ( unsigned int flags,
                                                 ObjectId window,
                                                 ComponentId draggable,
-                                                char *buffer,
+                                                _Optional char *buffer,
                                                 int buff_size,
                                                 _Optional int *nbytes
                                               );
@@ -1540,10 +1548,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *draggable_get_text ( unsigned int flags,
                                               ObjectId window,
                                               ComponentId draggable,
-                                              char *buffer,
+                                              _Optional char *buffer,
                                               int buff_size,
                                               _Optional int *nbytes
                                             );
@@ -2214,10 +2223,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *button_get_value ( unsigned int flags,
                                             ObjectId window,
                                             ComponentId button,
-                                            char *buffer,
+                                            _Optional char *buffer,
                                             int buff_size,
                                             _Optional int *nbytes
                                           );
@@ -2235,10 +2245,11 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *button_get_validation ( unsigned int flags,
                                                  ObjectId window,
                                                  ComponentId button,
-                                                 char *buffer,
+                                                 _Optional char *buffer,
                                                  int buff_size,
                                                  _Optional int *nbytes
                                                );

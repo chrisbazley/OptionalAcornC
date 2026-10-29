@@ -206,9 +206,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *proginfo_get_uri ( unsigned int flags,
                                             ObjectId proginfo,
-                                            char *buffer,
+                                            _Optional char *buffer,
                                             int buff_size,
                                             _Optional int *nbytes
                                           );
@@ -241,9 +242,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *proginfo_get_title ( unsigned int flags,
                                               ObjectId proginfo,
-                                              char *buffer,
+                                              _Optional char *buffer,
                                               int buff_size,
                                               _Optional int *nbytes
                                             );
@@ -307,9 +309,10 @@
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *proginfo_get_version ( unsigned int flags,
                                                 ObjectId proginfo,
-                                                char *buffer,
+                                                _Optional char *buffer,
                                                 int buff_size,
                                                 _Optional int *nbytes
                                               );

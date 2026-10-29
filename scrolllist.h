@@ -238,10 +238,11 @@ extern _Optional _kernel_oserror *scrolllist_set_colour ( unsigned int flags,
  * Returns     : pointer to error block
  */
 
+/* A null buffer queries the required size; the input buffer size is ignored. */
 extern _Optional _kernel_oserror *scrolllist_get_item_text ( unsigned int flags,
                                                              ObjectId window,
                                                              ComponentId scrolllist,
-                                                             char *buffer,
+                                                             _Optional char *buffer,
                                                              int size,
                                                              int index,
                                                              _Optional int *nbytes

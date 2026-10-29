@@ -450,9 +450,10 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *window_get_pointer ( unsigned int flags,
                                               ObjectId window,
-                                              char *buffer,
+                                              _Optional char *buffer,
                                               int buff_size,
                                               _Optional int *nbytes,
                                               _Optional int *x_hot_spot,
@@ -487,9 +488,10 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *window_get_help_message ( unsigned int flags,
                                                    ObjectId window,
-                                                   char *buffer,
+                                                   _Optional char *buffer,
                                                    int buff_len,
                                                    _Optional int *nbytes
                                                  );
@@ -558,9 +560,10 @@ extern _Optional _kernel_oserror *window_get_pointer_info ( unsigned int flags,
   * Returns     : pointer to error block
   */
  
+ /* A null buffer queries the required size; the input buffer size is ignored. */
  extern _Optional _kernel_oserror *window_get_title ( unsigned int flags,
                                             ObjectId window,
-                                            char *buffer,
+                                            _Optional char *buffer,
                                             int buff_size,
                                             _Optional int *nbytes
                                           );
