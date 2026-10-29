@@ -87,11 +87,12 @@
    ComponentId   component_id;
    char          *text;
    int           max_text;
-   char          *click_show;
-   char          *submenu_show;
+   /* Null means no associated object or help text. */
+   _Optional char *click_show;
+   _Optional char *submenu_show;
    int           submenu_event;
    int           click_event;
-   char          *help_message;
+   _Optional char *help_message;
    int           max_entry_help;
  } MenuTemplateEntry;
  

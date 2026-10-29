@@ -37,3 +37,9 @@ const WimpDragBox standard_drag_box = {
     .workspace = 0,
     .draw = 0,
 };
+
+/* Entries without click-show objects, submenus or help text are valid. */
+const MenuTemplateEntry plain_menu_entry = {
+    .text = "Entry",
+    .click_show = 0,
+};
