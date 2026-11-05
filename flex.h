@@ -35,7 +35,7 @@
 #define _Optional
 #endif
 
- typedef void **flex_ptr;
+ typedef _Optional void **flex_ptr;
  
  
  /* ----------------------------- flex_alloc -------------------------------
